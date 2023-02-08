@@ -102,7 +102,7 @@ export default function ListAllProblems() {
         .order("created_at", { ascending: false });
       if (error) console.log("error", error);
       else setProblems(problems);
-    } else if (problemsStatus === "" && type === ""){
+    } else if (problemsStatus === "" && type === "") {
       let { data: problems, error } = await supabase
         .from("problems")
         .select("*")
@@ -140,7 +140,9 @@ export default function ListAllProblems() {
         <option value="water">ระบบน้ำ</option>
         <option value="electronic">ระบบไฟฟ้า</option>
         <option value="computer">ระบบคอมพิวเตอร์</option>
-        <option value="component">อุปกรณ์ชำรุด</option>
+        <option value="aircon">ระบบปรับอากาศ</option>
+        <option value="phone">ระบบโทรศัพท์</option>
+        <option value="others">อื่นๆ</option>
       </Select>
 
       <Stack spacing={4} p={3} alignItems="center">

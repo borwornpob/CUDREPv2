@@ -151,7 +151,7 @@ export default function Dashboard() {
   const jumpToEditStatus = (id) => {
     console.log("link to ", "/problems/" + id);
     navigate("/problems/" + id);
-  }
+  };
 
   return (
     <Container maxW="90%" centerContent>
@@ -168,7 +168,9 @@ export default function Dashboard() {
         <option value="water">ระบบน้ำ</option>
         <option value="electronic">ระบบไฟฟ้า</option>
         <option value="computer">ระบบคอมพิวเตอร์</option>
-        <option value="component">อุปกรณ์ชำรุด</option>
+        <option value="aircon">ระบบปรับอากาศ</option>
+        <option value="phone">ระบบโทรศัพท์</option>
+        <option value="others">อื่นๆ</option>
       </Select>
 
       <Wrap spacing={4} p={3} justify="center">

@@ -224,7 +224,9 @@ export default function CreateReport() {
             <option value="water">ระบบน้ำ</option>
             <option value="electronic">ระบบไฟฟ้า</option>
             <option value="computer">ระบบคอมพิวเตอร์</option>
-            <option value="component">อุปกรณ์ชำรุด</option>
+            <option value="aircon">ระบบปรับอากาศ</option>
+            <option value="phone">ระบบโทรศัพท์</option>
+            <option value="others">อื่นๆ</option>
           </Select>
 
           <FormLabel mt={3}>รายละเอียด</FormLabel>
